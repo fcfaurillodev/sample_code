@@ -33,7 +33,6 @@
 
 ```bash
 Method: POST
-Type: RAW
 URL: {{base_url}}/api/merchant
 ```
 
@@ -72,7 +71,6 @@ URL: {{base_url}}/api/merchant
 
 ```bash
 Method: DELETE
-Type: RAW
 URL: {{base_url}}/api/merchant/{{merchant_id}}
 ```
 
@@ -95,7 +93,6 @@ URL: {{base_url}}/api/merchant/{{merchant_id}}
 
 ```bash
 Method: GET
-Type: 
 URL: {{base_url}}/api/merchant/{{merchant_id}}
 ```
 
@@ -118,7 +115,6 @@ URL: {{base_url}}/api/merchant/{{merchant_id}}
 
 ```bash
 Method: GET
-Type: 
 URL: {{base_url}}/api/merchants
 ```
 
@@ -150,7 +146,6 @@ URL: {{base_url}}/api/merchants
 
 ```bash
 Method: PATCH
-Type: RAW
 URL: {{base_url}}/api/merchant/{{merchant_id}}
 ```
 
@@ -187,7 +182,6 @@ URL: {{base_url}}/api/merchant/{{merchant_id}}
 
 ```bash
 Method: GET
-Type: 
 URL: {{base_url}}/api/healthcheck
 ```
 
