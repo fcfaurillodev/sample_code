@@ -10,34 +10,32 @@ Repository:`https://github.com/fcfaurillodev/sample_code.git`
 
 Guide on installing python virtual environment and starting up rewards fetcher app
 
-1 - Installing python virtual environment
+1 Install python virtual environment
 ```shell
 pip install virtualenv
 ```
 This will install python virtualenv package
 
-2 - Creating virtual environment. This tool requires python3.7.4
+2 Create virtual environment
 ```shell
 virtualenv <path>/venv
 ```
-This will create a virtual environment directory.
 
-3 - Activate virtual environment
+3 Activate virtual environment
 ```shell
 source <path to vitrualenv>/bin/activate
 ```
 
-4 - Install requirements
-
+4 Install requirements
 Go to project directory and run command below
 ```shell
 pip install -r requirements.txt
 ```
 This will install required python packages.
 
-5 - Setup local Mysql DB and Redis DB
+5 Setup local Mysql DB and Redis DB
 
-8 - Starting the flask app
+6 Run flask app
 ```shell
 flask run
 ```
