@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "3bc5c1e6-baf9-4a94-8965-d2635024a8e2",
+		"name": "Sample App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Merchant API",
+			"item": [
+				{
+					"name": "Get Merchant",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "client-id",
+								"value": "{{app_client_id}}",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/merchant/{{merchant_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"merchant",
+								"{{merchant_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Merchants",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "client-id",
+								"type": "text",
+								"value": "{{app_client_id}}"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer {{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/merchants?page=1&limit=100",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"merchants"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Merchant",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "client-id",
+								"value": "{{app_client_id}}",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"merchant_name\": \"Sample Merchant\",\n    \"identity_id\": \"123456\",\n    \"description\": \"sample description\",\n    \"contact_number\": \"092000000\",\n    \"contact_email\": \"sample@mail.com\",\n    \"contact_person\": \"sample name\",\n    \"address\": \"sample address\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/merchant",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"merchant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Merchant",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "client-id",
+								"type": "text",
+								"value": "{{app_client_id}}"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer {{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"merchant_name\": \"Test Merchant\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/merchant/10",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"merchant",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Merchant",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "client-id",
+								"type": "text",
+								"value": "{{app_client_id}}"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer {{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/merchant/10",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"merchant",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Healtcheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/healthcheck",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"healthcheck"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

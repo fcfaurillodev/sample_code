@@ -1,0 +1,21 @@
+#Mr Developer
+venv
+*.pyc
+build
+sample_app_env
+
+#Pycharm
+.idea/
+
+*.env
+
+#tests
+htmlcov
+.coverage
+coverage.xml
+
+# Certs
+*.pem
+
+#vscode
+.vscode/*
