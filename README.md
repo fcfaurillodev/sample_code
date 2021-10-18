@@ -1,4 +1,6 @@
 # Sample App
+Simple webservice with CRUD operations for Merchant
+
 ## Getting started
 Pull the source code from the repository.
 
