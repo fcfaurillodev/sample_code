@@ -84,7 +84,7 @@ LOG_LEVEL=DEBUG
 
 
 ## API DOCS
-- [Merchant API](app/docs/sample_app.md)
+- [Merchant API](docs/sample_app.md)
 
 
 ### Sample client insert query for API authentication with client-id: test-client:

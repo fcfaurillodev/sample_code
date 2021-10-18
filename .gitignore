@@ -1,4 +1,6 @@
 #Mr Developer
+.DS_STORE
+
 venv
 *.pyc
 build
