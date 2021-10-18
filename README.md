@@ -4,8 +4,6 @@ Pull the source code from the repository.
 
 Repository:`https://github.com/fcfaurillodev/sample_code.git`
 
-Create `.env` for configuration settings.
-
 ## Installation
 
 Guide on installing python virtual environment and starting up rewards fetcher app
@@ -56,6 +54,7 @@ python -m pytest tests -v --cov-report term --cov-report html:htmlcov --cov-repo
 ```
 
 ## Configurations
+Create `.env` for configuration settings.
 
 ### Sample .env file for development:
 ```shell
