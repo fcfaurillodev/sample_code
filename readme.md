@@ -35,7 +35,7 @@ pip install -r requirements.txt
 ```
 This will install required python packages.
 
-5 - Setup local Mysql DB and Redis DB 
+5 - Setup local Mysql DB and Redis DB
 
 8 - Starting the flask app
 ```shell
