@@ -42,8 +42,8 @@ URL: {{base_url}}/api/merchant
 
 | Key | Value | Description |
 | --- | ------|-------------|
-| client-id | {{app_client_id}} |  |
-| Authorization | Bearer {{token}} |  |
+| client-id | {{app_client_id}} | |
+| Authorization | Bearer {{token}} | |
 | Content-Type | application/json |  |
 
 
@@ -73,7 +73,7 @@ URL: {{base_url}}/api/merchant
 ```bash
 Method: DELETE
 Type: RAW
-URL: {{base_url}}/api/merchant/10
+URL: {{base_url}}/api/merchant/{{merchant_id}}
 ```
 
 
@@ -151,7 +151,7 @@ URL: {{base_url}}/api/merchants
 ```bash
 Method: PATCH
 Type: RAW
-URL: {{base_url}}/api/merchant/10
+URL: {{base_url}}/api/merchant/{{merchant_id}}
 ```
 
 
