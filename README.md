@@ -8,34 +8,36 @@ Repository:`https://github.com/fcfaurillodev/sample_code.git`
 
 ## Installation
 
-Guide on installing python virtual environment and starting up rewards fetcher app
+Guide on installing python virtual environment, setup and starting the app
 
-1 Install python virtual environment
+1. Install python virtual environment
 ```shell
 pip install virtualenv
 ```
 This will install python virtualenv package
 
-2 Create virtual environment
+2. Create virtual environment
 ```shell
 virtualenv <path>/venv
 ```
 
-3 Activate virtual environment
+3. Activate virtual environment
 ```shell
 source <path to vitrualenv>/bin/activate
 ```
 
-4 Install requirements
+4. Install requirements
 Go to project directory and run command below
 ```shell
 pip install -r requirements.txt
 ```
 This will install required python packages.
 
-5 Setup local Mysql DB and Redis DB
+5. Setup local Mysql DB and Redis DB
 
-6 Run flask app
+6. Create `.env` for configuration settings
+
+7. Run flask app
 ```shell
 flask run
 ```
@@ -54,7 +56,6 @@ python -m pytest tests -v --cov-report term --cov-report html:htmlcov --cov-repo
 ```
 
 ## Configurations
-Create `.env` for configuration settings.
 
 ### Sample .env file for development:
 ```shell
