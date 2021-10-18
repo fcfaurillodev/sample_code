@@ -88,7 +88,7 @@ LOG_LEVEL=DEBUG
 - [Merchant API](docs/sample_app.md)
 
 
-### Sample client insert query for API authentication with client-id: test-client:
+### Sample client insert query for API authentication with client id test-client:
 ```sql
 INSERT INTO clients (client_id, name, audience, pub_key, active, created_at, updated_at) VALUES ("test-client", "TEST CLIENT", "f9b3cb87-a0e9-4e1b-8077-f1c6337fd903",  "-----BEGIN PUBLIC KEY-----
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwIcdaE2EKzQCuhMx7x3V
